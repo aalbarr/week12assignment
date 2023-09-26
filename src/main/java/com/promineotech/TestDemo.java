@@ -1,5 +1,7 @@
 package com.promineotech;
 
+import java.util.Random;
+
 public class TestDemo {
 	public int addPositive(int a, int b) {
 		int sum;
@@ -12,4 +14,15 @@ public class TestDemo {
 
 		return sum;
 	}
+
+	public int randomNumberSquared() {
+		int numSquared = getRandomInt();
+	return numSquared * numSquared;
+	}
+	
+	int getRandomInt() {
+		Random random = new Random();
+		return random.nextInt(10) +1;
+	}
+
 }

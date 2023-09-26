@@ -27,7 +27,7 @@ class TestDemoJUnitTest {
 	// changed "test to parameterizedtest"
 	// added methodsource below w/ 'class name#'method that provides parameters
 	@ParameterizedTest
-	@MethodSource("TestDemoJUnitTest#argumentsForAddPositive")
+	@MethodSource("com.promineotech.TestDemoJUnitTest#argumentsForAddPositive")
 	void assertThatTwoPositiveNubmerAreAddedCorrectly(int a, int b, int expected, boolean expectException) {
 		if (!expectException) {// asserts that td.aP is called w/ a & b result is the same as 'expected'
 			assertThat(testDemo.addPositive(a, b)).isEqualTo(expected);
