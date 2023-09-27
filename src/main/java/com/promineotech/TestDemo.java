@@ -14,6 +14,19 @@ public class TestDemo {
 
 		return sum;
 	}
+	
+	//method to determine if there is a remainder
+	public int determineRemainder(int a, int b) {
+		int remNum = a % b;//line that performs the modulo expression
+		
+		if(remNum == 0) {//if there is no remainder print this message
+			System.out.println("There is no remainder");
+		}else {//if there is a remainder, throw this exception
+			throw new IllegalArgumentException("The remainder must be 0!");
+		}
+			
+		return remNum;//returns the remainder
+	}
 
 	public int randomNumberSquared() {
 		int numSquared = getRandomInt();
